@@ -8,7 +8,7 @@ export default function HomePage() {
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover new z-0"
         >
           <source src="/image/mov_bbb.mp4" type="video/mp4" />
           Your browser does not support the video tag.
