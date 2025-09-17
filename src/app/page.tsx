@@ -77,15 +77,15 @@ export default function HomePage() {
         </h2>
         <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-[50px] p-8 shadow-md text-center">
-            <p>"Astroger helped me connect with people in a whole new way!"</p>
+            <p>Astroger helped me connect with people in a whole new way!</p>
             <span className="block mt-4 font-semibold text-[#d9914b]">- Priya</span>
           </div>
           <div className="bg-white rounded-[50px] p-8 shadow-md text-center">
-            <p>"The video calls are so smooth and reliable."</p>
+            <p>The video calls are so smooth and reliable.</p>
             <span className="block mt-4 font-semibold text-[#d9914b]">- Rohit</span>
           </div>
           <div className="bg-white rounded-[50px] p-8 shadow-md text-center">
-            <p>"Love the astro guidance feature — very accurate!"</p>
+            <p>Love the astro guidance feature — very accurate!</p>
             <span className="block mt-4 font-semibold text-[#d9914b]">- Ananya</span>
           </div>
         </div>
