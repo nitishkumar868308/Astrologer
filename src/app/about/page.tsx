@@ -10,11 +10,11 @@ const AboutPage = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-[#b77a3a] mb-4">
           About Astroger
         </h1>
-        <p className="text-[#555] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        {/* <p className="text-[#555] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
           Astroger is your cosmic companion – connecting people through chat,
           video calls, and personalized astrological insights. Our mission is
           to help you explore the stars while building meaningful connections.
-        </p>
+        </p> */}
       </section>
 
       {/* Mission / Vision / Values */}
@@ -93,3 +93,109 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+
+// "use client";
+
+// import React from "react";
+// import { motion } from "framer-motion";
+// import Image from "next/image";
+
+// const AboutPage = () => {
+//   const sections = {
+//     fadeLeft: { hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } },
+//     fadeRight: { hidden: { opacity: 0, x: 50 }, visible: { opacity: 1, x: 0 } },
+//   };
+
+//   const contentBlocks = [
+//     {
+//       title: "Our Vision",
+//       desc: "To bring people closer while exploring the wonders of the cosmos.",
+//       img: "/image/vission.jpg",
+//     },
+//     {
+//       title: "Our Mission",
+//       desc: "Create seamless connections through chat, video, and personalized astrology.",
+//       img: "/image/mission.webp",
+//     },
+//     {
+//       title: "Our Values",
+//       desc: "Trust, transparency, and a cosmic experience that feels personal for everyone.",
+//       img: "/image/values.jpg",
+//     },
+//   ];
+
+//   return (
+//     <div className="relative bg-[#fdf8f3] px-5 md:px-10 py-20 mx-auto overflow-hidden">
+//       {/* Background Decorative Images */}
+//       <Image
+//         src="/image/image10.png"
+//         alt="decor"
+//         width={300}
+//         height={300}
+//         className="absolute top-30 opacity-20 pointer-events-none select-none"
+//       />
+
+//       <Image
+//         src="/image/image5.png"
+//         alt="decor"
+//         width={200}
+//         height={200}
+//         className="absolute bottom-50 left-1/2 -translate-x-1/2 opacity-40 pointer-events-none select-none"
+
+//       />
+
+//       {/* Heading */}
+//       <h1 className="text-4xl md:text-5xl font-bold text-gray-500 mb-16 text-center relative z-10">
+//         About Us
+//         <span className="block h-1 bg-gray-400 mt-2 rounded w-24 mx-auto"></span>
+//       </h1>
+
+//       {/* Content Sections */}
+//       {contentBlocks.map((block, index) => (
+//         <motion.section
+//           key={index}
+//           className={`flex flex-col md:flex-row items-center justify-center gap-10 mb-20 ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+//             } relative z-10`}
+//           initial="hidden"
+//           whileInView="visible"
+//           viewport={{ once: true, amount: 0.3 }}
+//           transition={{ staggerChildren: 0.2 }}
+//         >
+//           {/* Text */}
+//           <motion.div
+//             variants={index % 2 === 0 ? sections.fadeLeft : sections.fadeRight}
+//             className="md:w-1/2 text-center md:text-left"
+//           >
+//             <h2 className="text-3xl font-bold text-gray-500 mb-4 relative inline-block">
+//               {block.title}
+//               <span className="block h-1 bg-gray-400 mt-2 rounded w-full"></span>
+//             </h2>
+//             <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+//               {block.desc}
+//             </p>
+//           </motion.div>
+
+//           {/* Image */}
+//           <motion.div
+//             variants={index % 2 === 0 ? sections.fadeRight : sections.fadeLeft}
+//             className="md:w-1/2 flex justify-center"
+//           >
+//             <div className="relative w-[300px] md:w-[400px] h-[300px] md:h-[400px]">
+//               <Image
+//                 src={block.img}
+//                 alt={block.title}
+//                 fill
+//                 className="object-cover rounded-[40px] shadow-xl"
+//                 style={{ objectPosition: "center" }}
+//               />
+//             </div>
+//           </motion.div>
+//         </motion.section>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default AboutPage;
+
